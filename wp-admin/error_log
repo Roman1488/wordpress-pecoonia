@@ -1,0 +1,2 @@
+[05-Jul-2017 00:34:56 UTC] WordPress database error Unknown column 'wp_' in 'field list' for query SELECT wp_
+[17-Jul-2017 23:18:13 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'WP_Mobile_Menu' does not have a method 'mm_fs_uninstall_cleanup' in /home/digista/public_html/clients/pecoonia/wp-includes/class-wp-hook.php on line 298

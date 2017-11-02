@@ -1,0 +1,212 @@
+/*
+Theme Name:     Omega Child
+Author:         MakeIT
+Template:       omega
+Version:        0.1.0
+*/
+
+
+/* Home page */
+
+.navbar .top-login {
+    background-color: orange !important;
+    padding: 15px 33px 33px 33px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    border-radius: 5px;
+    margin-top: 25px;
+    height: 50px!important;
+    line-height: 20px!important;
+    font-size: 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.navbar.navbar-scrolled .top-login {
+    margin-top: 8px;
+}
+.navbar a.top-login_mobile {
+    background-color: orange !important;
+    color: white;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 10px 20px 10px 20px;
+    height: 50px!important;
+    line-height: 30px!important;
+    font-size: 14px;
+    float: right;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.navbar a.top-login_mobile:hover,
+.navbar a.top-login_mobile:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.navbar.navbar-scrolled .top-login_mobile {
+    margin-top: 8px;
+}
+.btn:hover {
+    color: #D3D3D3;
+}
+.middle-text {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2
+}
+#module_icons .fa,
+.module_icons .fa {
+    color: #FC781F !important;
+    margin-top: 10px;
+}
+#module_icons h3,
+.module_icons h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #3572AC;
+}
+#module_icons,
+.module_icons {
+    line-height: 0.5;
+}
+#module_icons h4,
+.module_icons h4 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4c4c4c
+}
+#module-footer h4 {
+    font-weight: 700;
+}
+.email-btn {
+    cursor: pointer;
+}
+.text-copyright {
+    margin-left: 10px;
+    font-weight: 300 !important;
+}
+h5 {
+    font-weight: 300 !important;
+}
+.btn.start-button {
+    color: #ffffff;
+    background: #FC781F;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 28px;
+}
+sidebar-header {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .element-medium-top {
+        margin-top: 20px!important;
+    }
+    .navbar-brand {
+        width: 220px !important;
+    }
+    .icon-bar {
+        color: blue !important;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .top-login_mobile {
+        display: none;
+    }
+}
+
+
+
+/* Contact form */
+
+.contact-form-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 110px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    padding-bottom: 50px;
+    overflow: auto;
+}
+body.contact-form-active .contact-form-wrap {
+	opacity: 1;
+	visibility: visible;
+}
+body.contact-form-active {
+	overflow: hidden;
+}
+.contact-form-inner {
+    background: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 500px;
+    border: 1px solid #c5c0c0;
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
+.contact-form-inner i {
+	position: absolute;
+	right: 30px;
+	cursor: pointer;
+}
+.contact-form-inner i:before {
+    content: "";
+    background-image: url('assets/img/ios-close-outline.png');
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+}
+.contact-form-wrap h3 {
+    font-size: 30px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+.contact-form-wrap label {
+	font-size: 14px;
+	font-weight: 400;
+	display: block;
+}
+.contact-form-wrap input:not([type="submit"]),
+.contact-form-wrap textarea {
+	background-color: #f7f7f7;
+	border:1px solid #c5c5c5;
+	width: 100%;
+    margin-top: 6px;
+    padding: 3px 6px;
+}
+.contact-form-wrap input:not([type="submit"]):focus,
+.contact-form-wrap textarea:focus {
+	border-color: #c5c5c5;
+}
+
+.contact-form-wrap input.wpcf7-submit {
+    background-color: #323131;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+@media (max-height: 800px), (min-width: 767px) {
+	.contact-form-wrap {
+		display: block;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
